@@ -1,0 +1,71 @@
+.card--wrapper {
+  display: flex;
+  border-radius: 10px;
+  margin: 5px 10px;
+  width: 100%;
+  height: 141px;
+  box-shadow: 0 2px 4px grey;
+  cursor: pointer;
+}
+
+.movie--information {
+  display: grid;
+  grid-template-columns: auto auto 1fr; /* Two columns and a flexible third column */
+  grid-template-rows: 0.2fr 0.5fr; /* Single row */
+  width: 100%;
+  padding: 0.875em;
+}
+
+.poster {
+  height: 100%;
+  width: 6.875em;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  cursor: pointer;
+}
+
+.read--more--btn {
+  border: none;
+  background-color: inherit;
+  color: blue;
+}
+
+.star--container {
+  grid-column: 3;
+  grid-row: 1 / span 3;
+  justify-self: end;
+}
+
+.movie--plot {
+  margin: auto 0;
+}
+.movie--title {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.movie--year {
+  grid-column: 1 / span 2;
+  font-weight: lighter;
+  font-size: 0.75rem;
+  color: grey;
+}
+
+.movie--title,
+.movie--year {
+  margin: 0; /* Remove default margin */
+}
+
+p {
+  font-size: 0.775rem;
+  line-height: 1.5;
+}
+
+.ri-star-line {
+  font-size: 1.2em;
+}
+
+.ri-star-fill {
+  color: red;
+  font-size: 1.2em;
+}
