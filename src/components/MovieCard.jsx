@@ -31,11 +31,6 @@ const MovieCard = ({ Title, Released, Plot, Poster, imdbID }) => {
         <Link to={`/${Title}`}>
           <img className="poster" src={Poster} alt={Title} />
         </Link>
-        <Routes>
-          <Route path={`/${Title}`}>
-            {Title} - {Plot}
-          </Route>
-        </Routes>
       </div>
       <div className="movie--information">
         <h1 className="movie--title">{Title}</h1>
